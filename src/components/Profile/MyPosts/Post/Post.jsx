@@ -1,17 +1,17 @@
 import React from 'react';
 import s from './Post.module.css';
 
-const Post = () => {
+const Post = (props) => {
+
   return (
     <div className={s.item}>
-      <img src='https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/4b/4b30ad87357409ab79cfa6573f0c8a0e2d4d360c_full.jpg' />
-      post 1
+      <img src='https://movies4maniacs.liberty.me/wp-content/uploads/sites/1218/2015/09/avatarsucks.jpg' />
+        { props.message }
           <div>
-        <span>like</span>
+        <span>like</span> { props.likesCount }
       </div>
     </div>
   )
-
 }
 
 export default Post;
