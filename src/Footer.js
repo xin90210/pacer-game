@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (<div>
-   it-kamasutra.com footer
+    footer
   </div>);
 }
 

@@ -1,23 +1,38 @@
 import React from 'react';
+import { BrowserRouter, Route, Redirect } from "react-router-dom";
 import './App.css';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import Dialogs from "./components/Dialogs/Dialogs";
-import {BrowserRouter, Route} from "react-router-dom";
+import Login from "./components/Login/Login";
+import Endeavors from './components/Endeavors/Endeavors';
+import Quests from './components/Quests/Quests';
+import Progress from './components/Progress/Progress';
+import Activities from './components/Activities/Activities';
+import Home from './components/Home/Home';
 
 const App = (props) => {
+
+
+
     return (
-        <BrowserRouter>
-            <div className='app-wrapper'>
-                <Header/>
-                <Navbar/>
-                <div class='app-wrapper-content'>
-                    <Route path='/dialogs' component={Dialogs}/> {/*/dialogs/spam/blabla*/}
-                    <Route path='/profile' component={Profile}/>
-                </div>
+        <div className='app-wrapper'>
+            <Header />
+            <Navbar />
+            <div class='app-wrapper-content'>
+                <Redirect exact from="/" to="/home" />
+                <Route path='/home' render={() => <Home />} />
+                <Route path='/endeavors' render={() => <Endeavors />} />
+                <Route path='/activities' render={() => <Activities />} />
+                <Route path='/quests' render={() => <Quests />} />
+                <Route path='/progress' render={() => <Progress />} />
+                <Route path='/profile' render={() => <Profile state={props.state.profilePage} />} />
+                <Route path='/dialogs' render={() => <Dialogs state={props.state.dialogsPage} />} />
+                <Route path='/login' render={() => <Login />} />
             </div>
-        </BrowserRouter>)
+        </div>
+    )
 }
 
 export default App;

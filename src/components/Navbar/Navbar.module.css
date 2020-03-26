@@ -1,7 +1,8 @@
 .nav {
-    grid-area: n;
-    background-color: burlywood;
+    grid-area: nav;
+    background-color: darkgrey;
     padding: 20px;
+    max-height: 130px;
 }
 
 .item a {
