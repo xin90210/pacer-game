@@ -14,7 +14,6 @@ const Header = () => {
                 </NavLink>
                 <button>Register</button>
             </div>
-            {/* <Login /> */}
         </header>
     )
 }
