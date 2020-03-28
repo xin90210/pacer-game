@@ -20,14 +20,14 @@ const App = (props) => {
         <div className='app-wrapper'>
             <Header />
             <Navbar />
-            <div class='app-wrapper-content'>
+            <div className='app-wrapper-content'>
                 <Redirect exact from="/" to="/home" />
                 <Route path='/home' render={() => <Home />} />
                 <Route path='/endeavors' render={() => <Endeavors />} />
                 <Route path='/activities' render={() => <Activities />} />
                 <Route path='/quests' render={() => <Quests />} />
                 <Route path='/progress' render={() => <Progress />} />
-                <Route path='/profile' render={() => <Profile state={props.state.profilePage} />} />
+                <Route path='/profile' render={() => <Profile state={props.state.profilePage} addPost={props.addPost} />} />
                 <Route path='/dialogs' render={() => <Dialogs state={props.state.dialogsPage} />} />
                 <Route path='/login' render={() => <Login />} />
             </div>
