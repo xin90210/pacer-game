@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './Header.module.css';
 import icon from '../../assets/favicon.ico'
-// import Login from './../Login/Login';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
@@ -14,7 +13,6 @@ const Header = () => {
                 </NavLink>
                 <button>Register</button>
             </div>
-            {/* <Login /> */}
         </header>
     )
 }

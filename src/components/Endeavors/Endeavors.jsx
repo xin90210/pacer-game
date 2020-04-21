@@ -1,11 +1,6 @@
 import React from 'react';
 import s from './Endeavors.module.css';
 
-// Message = Endeavor
-// messages = endeavorsList
-// messagesElements = endeavorsElements
-// message = endeavor
-
 const Endeavor = (props) => {
     return <div>{props.endeavor}</div>
 }
