@@ -1,13 +1,12 @@
 import React from 'react';
 import * as serviceWorker from './serviceWorker';
-import state from './redux/state';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
 ReactDOM.render(
     <BrowserRouter>
-        <App state={state} />
+        <App  />
     </BrowserRouter>, document.getElementById('root'))
 
 

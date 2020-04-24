@@ -11,7 +11,7 @@ const Profile = (props) => {
                 <p>Кот в сапогах</p>
             </div>
             <div>
-                <img src='https://24smi.org/public/media/258x320/person/2018/02/09/kseckkgybj5s-kot-v-sapogakh.jpg' />
+                <img alt='' src='https://24smi.org/public/media/258x320/person/2018/02/09/kseckkgybj5s-kot-v-sapogakh.jpg' />
             </div>
         </div>
     )
